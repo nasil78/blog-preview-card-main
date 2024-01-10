@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@600&display=swap");
+
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Figtree", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: auto;
+  cursor: pointer;
+}
+.wrapper {
+  display: grid;
+  max-width: 325px;
+  padding: 1.25rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  background-color: var(--white);
+  box-shadow: 10px 10px 0px -3px rgba(0, 0, 0, 1);
+}
+.wrapper > img {
+  display: block;
+  width: 100%;
+  object-fit: fill;
+  border-radius: 0.75rem;
+}
+.wrapper:hover{
+  box-shadow: 15px 15px 0px -3px rgba(0, 0, 0, 1)
+}
+h3 {
+  cursor: pointer(); 
+}
+h3:hover{
+  color:  hsl(47, 88%, 63%);
+  font-weight: 600;
+}
+button {
+  cursor: pointer; 
+}
+
+.wrapper button {
+  background-color: var(--yellow);
+  padding: 0.25rem 0.5rem;
+  margin: 1rem 0;
+  border-radius: 0.25rem;
+  border: none;
+}
+.wrapper button:hover {
+  cursor: pointer;
+  background-color: var(--black);
+  color: var(--white);
+}
+.wrapper h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.wrapper p {
+  font-size: 12px;
+  color: var(--grey);
+  padding: 0.5rem 0rem;
+}
+.wrapper .user_profile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.user_profile img {
+  width: 10%;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 0.85rem 0rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    width: 100%;
+  }
+}
